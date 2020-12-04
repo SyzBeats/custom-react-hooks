@@ -4,17 +4,30 @@ import { useState } from "react";
  * that will be passed back to the component
  * @param {number} initial
  */
-export const useInc = (initial = 0) => {
+export const useInc = ({
+	maxValue = 10000,
+	minValue = -10000,
+	initial = 0,
+	step,
+}) => {
 	const [value, setValue] = useState(initial);
 
 	const inc = () => {
-		setValue(prevState => prevState + 1);
+		setValue(prevState =>
+			prevState + step > maxValue ? maxValue : prevState + step
+		);
 	};
 
 	const dec = () => {
-		setValue(prevState => prevState - 1);
+		setValue(prevState =>
+			prevState - step < minValue ? minValue : prevState - step
+		);
+	};
+
+	const reset = () => {
+		setValue(initial);
 	};
 
 	// inject functions to be passed
-	return [value, { inc, dec }];
+	return [value, { inc, dec, reset }];
 };
