@@ -1,6 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { useToggle } from "../hooks/useToggle";
+import { useToggle } from "../hooks";
 
 const Toggle = props => {
 	const { isToggled, toggle } = useToggle(false);
