@@ -5,23 +5,26 @@ import Inc from "./components/Inc";
 import "./App.css";
 import Mount from "./components/Mount";
 import Hover from "./components/Hover";
+import AppState from "./components/AppState";
 import Menu from "./Menu";
 import blue from "./blue.png";
 import purp from "./purp.png";
 import green from "./green.png";
+import Nav from "./components/Nav";
 
 function App() {
 	return (
-		<div>
+		<AppState>
 			<Header>
 				<Menu />
 				<h1>Header</h1>
 			</Header>
+			<Nav />
 			<Container>
 				<Toggle />
 				<Mount />
 				<Inc />
-				<h2>Super Cool</h2>
+				<h2>Cards</h2>
 				<CardGrid>
 					<Hover />
 					<Card style={{ background: "var(--purp)" }}>
@@ -38,7 +41,7 @@ function App() {
 					</Card>
 				</CardGrid>
 			</Container>
-		</div>
+		</AppState>
 	);
 }
 
