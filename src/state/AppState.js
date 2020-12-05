@@ -1,4 +1,4 @@
-import React, { createContext, useState, useReducer } from "react";
+import React, { createContext, useContext } from "react";
 import { useToggle } from "../hooks";
 
 const AppContext = createContext();
@@ -17,4 +17,6 @@ const AppState = ({ children }) => {
 };
 
 export { AppContext };
-export default AppState;
+export { AppState };
+
+export const useAppState = () => useContext(AppContext);

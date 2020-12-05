@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { AppContext } from "./components/AppState";
+import React from "react";
+import { useAppState } from "./state";
 const Menu = () => {
 	// hook used with context
-	const { toggleMenu } = useContext(AppContext);
+	const { toggleMenu } = useAppState();
 
 	return (
 		<button onClick={toggleMenu} style={{ background: "none", border: "none" }}>

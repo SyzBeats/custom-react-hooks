@@ -1,15 +1,15 @@
 import React from "react";
+import { AppState } from "./state";
 import { Card, CardGrid, Container, Header } from "./Elements";
-import Toggle from "./components/Toggle";
-import Inc from "./components/Inc";
 import "./App.css";
-import Mount from "./components/Mount";
-import Hover from "./components/Hover";
-import AppState from "./components/AppState";
 import Menu from "./Menu";
 import blue from "./blue.png";
 import purp from "./purp.png";
 import green from "./green.png";
+import Inc from "./components/Inc";
+import Toggle from "./components/Toggle";
+import Mount from "./components/Mount";
+import Hover from "./components/Hover";
 import Nav from "./components/Nav";
 
 function App() {
