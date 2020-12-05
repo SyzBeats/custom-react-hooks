@@ -11,6 +11,7 @@ import Toggle from "./components/Toggle";
 import Mount from "./components/Mount";
 import Hover from "./components/Hover";
 import Nav from "./components/Nav";
+import Cookie from "./components/Cookie";
 
 function App() {
 	return (
@@ -24,6 +25,7 @@ function App() {
 				<Toggle />
 				<Mount />
 				<Inc />
+				<Cookie />
 				<h2>Cards</h2>
 				<CardGrid>
 					<Hover />
