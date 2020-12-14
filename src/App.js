@@ -14,6 +14,7 @@ import Nav from "./components/Nav";
 import Cookie from "./components/Cookie";
 import LocalStorage from "./components/LocalStorage";
 import Script from "./components/Script";
+import Theme from "./components/Theme";
 
 function App() {
 	return (
@@ -31,6 +32,8 @@ function App() {
 				<Cookie />
 				<p>localstorage</p>
 				<LocalStorage />
+				<h2>theme</h2>
+				<Theme />
 				<h2>Cards</h2>
 				<CardGrid>
 					<Hover />
