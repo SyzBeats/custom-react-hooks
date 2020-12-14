@@ -12,6 +12,7 @@ import Mount from "./components/Mount";
 import Hover from "./components/Hover";
 import Nav from "./components/Nav";
 import Cookie from "./components/Cookie";
+import LocalStorage from "./components/LocalStorage";
 import Script from "./components/Script";
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
 				<Mount />
 				<Inc />
 				<Cookie />
+				<p>localstorage</p>
+				<LocalStorage />
 				<h2>Cards</h2>
 				<CardGrid>
 					<Hover />
