@@ -12,10 +12,12 @@ import Mount from "./components/Mount";
 import Hover from "./components/Hover";
 import Nav from "./components/Nav";
 import Cookie from "./components/Cookie";
+import Script from "./components/Script";
 
 function App() {
 	return (
 		<AppState>
+			<Script />
 			<Header>
 				<Menu />
 				<h1>Header</h1>
